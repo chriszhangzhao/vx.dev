@@ -11,6 +11,8 @@ export default function Home() {
   const [copied, setCopied] = useState(false);
   const [code, setCode] = useState("");
 
+  
+
   function setCodeHighlighter() {
     setCDN("https://cdn.jsdelivr.net/npm/shiki");
     getHighlighter({ theme: "one-dark-pro", langs: ["jsx"] })
